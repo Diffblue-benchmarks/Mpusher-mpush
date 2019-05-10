@@ -8,3 +8,36 @@
 # merging a custom yml file on top of this one using the script
 # in dashboard/scripts/update-diffblue-yml. Any options specified here would
 # be overriden to keep consistency with other benchmarks.
+exceptionJson: true
+cbmcArguments:
+  java-stub-specified-exceptions-file: 'dependency-exceptions.json'
+  java-load-class:
+    - java.io.IOException
+    - java.net.UnknownHostException
+    - java.lang.SecurityException
+    - org.junit.experimental.theories.PotentialAssignment$CouldNotGenerateValueException
+    - java.lang.reflect.InvocationTargetException
+    - org.junit.internal.runners.FailedBefore
+    - org.junit.runner.notification.StoppedByUserException
+    - org.junit.internal.ArrayComparisonFailure
+    - java.lang.InterruptedException
+    - org.junit.internal.runners.InitializationError
+    - org.junit.runners.model.InitializationError
+    - java.lang.Throwable
+    - java.lang.InstantiationException
+    - java.net.URISyntaxException
+    - java.lang.CloneNotSupportedException
+    - java.util.concurrent.ExecutionException
+    - java.util.concurrent.TimeoutException
+    - org.junit.experimental.max.CouldNotReadCoreException
+    - java.net.SocketException
+    - java.lang.ClassNotFoundException
+    - java.lang.UnsatisfiedLinkError
+    - java.text.ParseException
+    - io.netty.handler.codec.http.multipart.HttpPostRequestEncoder$ErrorDataEncoderException
+    - java.lang.IllegalAccessException
+    - java.lang.NoSuchMethodException
+    - java.lang.Exception
+    - java.io.ObjectStreamException
+    - org.junit.runner.manipulation.NoTestsRemainException
+    - java.lang.IllegalArgumentException
